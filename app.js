@@ -14,12 +14,10 @@ document.getElementById("total1").textContent = 0;
 document.getElementById("current2").textContent = 0;
 document.getElementById("total2").textContent = 0;
 // document.querySelector("#current2").innerHTML = "<em>dice<em>";
-// document.querySelector(".dice").style.display = "none";
+document.querySelector(".dice").style.display = "none";
 // console.log(dice);
-document.querySelector(".rollButton").addEventListener("click", shooShid);
-
-function shooShid() {
+document.querySelector("#rollButton").addEventListener("click", function () {
   var dice = Math.floor(Math.random() * 6) + 1;
-  if (dice !== 1) alert(dice + " is good");
-  else alert(dice + " oh no");
-}
+  document.querySelector(".dice").style.display = "block";
+  document.querySelector(".dice").src = "dice-" + dice + ".png";
+});
