@@ -12,7 +12,7 @@ function gameStart() {
   scores = [0, 0];
   roundScore = 0;
   activePlayer = Math.floor(Math.random() * 2);
-  image.src = "mongolz.png";
+  image.src = "dice-1.png";
   document.getElementById("player" + activePlayer).classList.add("active");
   document
     .getElementById("player" + (1 - activePlayer))
