@@ -1,6 +1,5 @@
 const image = document.getElementById("diceImage");
 
-var x, y, z;
 var scores;
 var roundScore;
 var activePlayer;
