@@ -52,7 +52,7 @@ document.getElementById("holdButton").addEventListener("click", function () {
     scores[activePlayer] += roundScore;
     document.getElementById("total" + activePlayer).textContent =
       scores[activePlayer];
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       isNewGame = false;
       document.getElementById("playerName" + activePlayer).textContent =
         "WINNER!";
